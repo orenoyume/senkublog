@@ -5,7 +5,7 @@ title = 'You dont see me'
 categories = ['test']
 tags = ['template']
 weight = 1000
-hidden = true
+menu = true
 [params]
   author = 'senkublog'
 
