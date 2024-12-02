@@ -7,17 +7,17 @@
 >
   <channel>
     <title>Website on Zaldy Blog</title>
-    <link>/tags/website/</link>
+    <link>https://orenoyume.github.io/senkublog/tags/website/</link>
     <description>Recent content in Website on Zaldy Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Dec 2024 17:20:11 +0800</lastBuildDate>
-    <atom:link href="/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://orenoyume.github.io/senkublog/tags/website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog Website Creation</title>
-      <link>/posts/blog-website-creation/</link>
+      <link>https://orenoyume.github.io/senkublog/posts/blog-website-creation/</link>
       <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
-      <guid>/posts/blog-website-creation/</guid>
+      <guid>https://orenoyume.github.io/senkublog/posts/blog-website-creation/</guid>
       <description>&lt;h3 id=&#34;old-header&#34;&gt;OLD Header&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: 1.0-&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;draft: false&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - blog&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - website&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - procedure&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;uploading-changes-to-github&#34;&gt;Uploading changes to GitHub&lt;/h3&gt;&#xA;&lt;p&gt;My script:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./deploy.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;explanation-of-the-script&#34;&gt;Explanation of the script&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Sync the files from obsidian to hugo contents folder&lt;/li&gt;&#xA;&lt;li&gt;Run hugo&lt;/li&gt;&#xA;&lt;li&gt;Push the files on Github&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;website&#34;&gt;Website&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://kimetsublog.github.io/kimetsublog/public/&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;important&#34;&gt;Important&lt;/h4&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;==Important: I do not know why when I added the date, it failed to load the pages of html==&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;==During Testing: Edit the config.toml base url: &amp;ldquo;/&amp;rdquo; from /kimetsublog/public/==&lt;/p&gt;</description>
       
     </item>

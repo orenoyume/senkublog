@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://orenoyume.github.io/senkublog/'
 languageCode = 'en-us'
 title = 'Zaldy Blog'
 theme = 'fluency'

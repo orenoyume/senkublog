@@ -7,10 +7,10 @@
 >
   <channel>
     <title>Categories on Zaldy Blog</title>
-    <link>/categories/</link>
+    <link>https://orenoyume.github.io/senkublog/categories/</link>
     <description>Recent content in Categories on Zaldy Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://orenoyume.github.io/senkublog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
