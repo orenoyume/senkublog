@@ -8,5 +8,12 @@ weight = 1000
 hidden = false
 [params]
   author = 'senkublog'
-
 +++
+
+I write something.
+{{ range .Site.Pages }}
+  <li>
+    <p>Page: {{ .Title }}</p>
+    <p>Hidden: {{ .Params.hidden }}</p>
+  </li>
+{{ end }}

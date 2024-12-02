@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:wfw="http://wellformedweb.org/CommentAPI/"><channel><title>Syntax on Zaldy Blog</title><link>https://orenoyume.github.io/senkublog/tags/syntax/</link><description>Recent content in Syntax on Zaldy Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 02 Dec 2024 17:20:11 +0800</lastBuildDate><atom:link href="https://orenoyume.github.io/senkublog/tags/syntax/index.xml" rel="self" type="application/rss+xml"/><item><title>Common PC Syntax</title><link>https://orenoyume.github.io/senkublog/posts/pc-iphone--android-set-up/common-pc-syntax/</link><pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate><guid>https://orenoyume.github.io/senkublog/posts/pc-iphone--android-set-up/common-pc-syntax/</guid><description>&lt;h2 id="linux">Linux&lt;/h2>
+&lt;h3 id="shutdown">Shutdown&lt;/h3>
+&lt;pre tabindex="0">&lt;code>shutdown -h now
+&lt;/code>&lt;/pre>&lt;h3 id="reboot">Reboot&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Shutdown -r 1
+&lt;/code>&lt;/pre>&lt;h3 id="find-your-local-ip-address">Find your local IP address&lt;/h3>
+&lt;pre tabindex="0">&lt;code>ifconfig
+&lt;/code>&lt;/pre>&lt;p>Find the IP address, e.g., 192.168.1.100.
+On the other PC, open a browser and go to:
+http://192.168.1.100:3000&lt;/p>
+&lt;h3 id="check-folder-size">Check folder size&lt;/h3>
+&lt;pre tabindex="0">&lt;code>du -ha | sort -k1hr | head -n 10
+&lt;/code>&lt;/pre>&lt;h2 id="windows">Windows&lt;/h2>
+&lt;h3 id="shutdown-1">Shutdown&lt;/h3>
+&lt;pre tabindex="0">&lt;code>shutdown /s /t 60
+&lt;/code>&lt;/pre>&lt;h3 id="find-your-local-ip-address-1">Find your local IP address&lt;/h3>
+&lt;pre tabindex="0">&lt;code>ipconfig
+&lt;/code>&lt;/pre>&lt;p>Find the IPv4 address, e.g., 192.168.1.100.&lt;/p>
+&lt;h3 id="edit-boot-loader">Edit Boot loader&lt;/h3>
+&lt;ol>
+&lt;li>Windows Button + R key&lt;/li>
+&lt;li>Run&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>msconfig
+&lt;/code>&lt;/pre>&lt;h2 id="mac">Mac&lt;/h2>
+&lt;h3 id="shutdown-2">Shutdown&lt;/h3>
+&lt;pre tabindex="0">&lt;code>shutdown -h +10
+&lt;/code>&lt;/pre>&lt;h2 id="android">Android&lt;/h2>
+&lt;h3 id="moving-my-file-from-termux-to-phone">Moving my file from Termux to phone&lt;/h3>
+&lt;pre tabindex="0">&lt;code>mv /data/data/com.termux/files/home/storage/japanese /storage/emulated/0/
+&lt;/code>&lt;/pre></description></item><item><title>Find your local IP address</title><link>https://orenoyume.github.io/senkublog/posts/pc-iphone--android-set-up/find-your-local-ip-address/</link><pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate><guid>https://orenoyume.github.io/senkublog/posts/pc-iphone--android-set-up/find-your-local-ip-address/</guid><description>&lt;p>To share your &lt;code>localhost:3000&lt;/code> with another PC on the same network, follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Find Your Local IP Address&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>On Windows, open Command Prompt and type &lt;code>ipconfig&lt;/code>. Look for the &amp;ldquo;IPv4 Address&amp;rdquo; under your network connection.&lt;/li>
+&lt;li>On macOS or Linux, open Terminal and type &lt;code>ifconfig&lt;/code> or &lt;code>ip a&lt;/code>. Look for the IP address associated with your network interface.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Access the Server from Another PC&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>On the other PC, open a web browser and type your local IP address followed by &lt;code>:3000&lt;/code>. For example, if your IP address is &lt;code>192.168.1.100&lt;/code>, you would enter &lt;code>http://192.168.1.100:3000&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="example-steps-on-windows">Example Steps on Windows:&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Open Command Prompt and type:&lt;/p></description></item></channel></rss>

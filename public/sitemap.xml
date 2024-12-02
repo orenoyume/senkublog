@@ -2,24 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/senkublog/posts/blog-website-creation/</loc>
+    <loc>//localhost:1313/posts/test---you-can-see-me/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/senkublog/posts/</loc>
+    <loc>//localhost:1313/posts/test---you-dont-see-me/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/senkublog/tags/procedure/</loc>
+    <loc>//localhost:1313/posts/blog-website-creation/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/senkublog/tags/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/senkublog/tags/website/</loc>
+    <loc>//localhost:1313/tags/git/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/senkublog/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/senkublog/categories/</loc>
+    <loc>//localhost:1313/tags/procedure/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/programming/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/script/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/sync/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/template/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/test/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/website/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url>
 </urlset>

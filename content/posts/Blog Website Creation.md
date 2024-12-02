@@ -4,6 +4,9 @@ draft = false
 title = 'Blog Website Creation'
 categories = ['programming']
 tags = ['procedure', 'website', 'git', 'script', 'sync']
+weight = 51
+[params]
+  author = 'senkublog'
 +++
 ### OLD Header
 ```bash

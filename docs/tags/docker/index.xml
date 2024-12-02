@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:wfw="http://wellformedweb.org/CommentAPI/"><channel><title>Docker on Zaldy Blog</title><link>https://orenoyume.github.io/senkublog/tags/docker/</link><description>Recent content in Docker on Zaldy Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 02 Dec 2024 17:20:11 +0800</lastBuildDate><atom:link href="https://orenoyume.github.io/senkublog/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker Installation in WSL2 Ubuntu without Docker Desktop</title><link>https://orenoyume.github.io/senkublog/posts/wsl2-installation/3.0-docker-installation-in-wsl2-ubuntu-without-docker-desktop/</link><pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate><guid>https://orenoyume.github.io/senkublog/posts/wsl2-installation/3.0-docker-installation-in-wsl2-ubuntu-without-docker-desktop/</guid><description>&lt;h2 id="1-update-your-system">1. Update Your System&lt;/h2>
+&lt;p>Open your WSL2 Ubuntu terminal and ensure your system is up-to-date.&lt;/p>
+&lt;pre tabindex="0">&lt;code>sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y
+&lt;/code>&lt;/pre>&lt;h3 id="wslconf">wsl.conf&lt;/h3>
+&lt;p>Make sure you have wsl.conf and not wsl.config (which does not work on wsl2)&lt;/p>
+&lt;h4 id="key-points">Key Points&lt;/h4>
+&lt;pre>&lt;code>1.	Correct File Name:
+•	WSL recognizes only wsl.conf for configuration purposes.
+•	wsl.config will not be recognized or processed by WSL.
+2.	Purpose of wsl.conf:
+•	It is used to configure system behaviors, including enabling systemd and other boot-time options.
+3.	File Location:
+•	The file must reside in /etc/ and be named wsl.conf.
+&lt;/code>&lt;/pre>
+&lt;h4 id="steps-to-ensure-proper-configuration">Steps to Ensure Proper Configuration&lt;/h4>
+&lt;h5 id="1check-existing-configuration-file">1.Check Existing Configuration File&lt;/h5>
+&lt;p>First, verify if wsl.conf exists:&lt;/p></description></item><item><title>Container Installation</title><link>https://orenoyume.github.io/senkublog/posts/wsl2-installation/3.1-container-installation/</link><pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate><guid>https://orenoyume.github.io/senkublog/posts/wsl2-installation/3.1-container-installation/</guid><description>&lt;p>Common Syntax:&lt;/p>
+&lt;pre tabindex="0">&lt;code>docker start &amp;lt;container name&amp;gt;
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>docker stop &amp;lt;container name&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>Syntax:&lt;/p>
+&lt;pre tabindex="0">&lt;code>mkdir -p ~/docker/firefox
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>cd ~/docker/firefox
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>nano docker-compose.yml
+&lt;/code>&lt;/pre>&lt;p>Choose Version&lt;/p>
+&lt;blockquote>
+&lt;p>version 11-24-2024: 132.0.2build2-0ubuntu0.24.04.1mt1-ls202
+image: lscr.io/linuxserver/firefox:latest
+image: lscr.io/linuxserver/firefox:132.0.2build2-0ubuntu0.24.04.1mt1-ls202&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">services&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">firefox&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">image&lt;/span>: &lt;span style="color:#ae81ff">lscr.io/linuxserver/firefox:latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">container_name&lt;/span>: &lt;span style="color:#ae81ff">firefox&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">security_opt&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">seccomp:unconfined&lt;/span> &lt;span style="color:#75715e">#optional&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">environment&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">PUID=1000&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">PGID=1000&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">TZ=Asia/Manila&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">FIREFOX_CLI=https://www.linuxserver.io/&lt;/span> &lt;span style="color:#75715e">#optional&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">volumes&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">~/docker/firefox/config:/config&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">ports&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">3009&lt;/span>:&lt;span style="color:#ae81ff">3000&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">3010&lt;/span>:&lt;span style="color:#ae81ff">3001&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">shm_size&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;1gb&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">restart&lt;/span>: &lt;span style="color:#ae81ff">unless-stopped&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Create the container:&lt;/p>
+&lt;pre tabindex="0">&lt;code>docker-compose up -d
+&lt;/code>&lt;/pre>&lt;p>Check running and stopped container&lt;/p>
+&lt;pre tabindex="0">&lt;code>docker ps -a
+&lt;/code>&lt;/pre>&lt;p>Remove the container&lt;/p>
+&lt;pre tabindex="0">&lt;code>docker-compose down
+&lt;/code>&lt;/pre>&lt;p>Restart or Redeploy the container&lt;/p></description></item><item><title>Deleting Container</title><link>https://orenoyume.github.io/senkublog/posts/wsl2-installation/3.2-deleting-container/</link><pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate><guid>https://orenoyume.github.io/senkublog/posts/wsl2-installation/3.2-deleting-container/</guid><description>&lt;ol>
+&lt;li>Container should be stopped before removing.&lt;/li>
+&lt;li>Syntax&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>docker ps -a
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>docker stop firefox
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>64aa3bef314a lscr.io/linuxserver/firefox:latest &amp;#34;Exited&amp;#34; 8 minutes ago Up 2 seconds 0.0.0.0:3009-&amp;gt;3000/tcp, [::]:3009-&amp;gt;3000/tcp, 0.0.0.0:3010-&amp;gt;3001/tcp, [::]:3010-&amp;gt;3001/tcp firefox
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code>docker rm firefox
+&lt;/code>&lt;/pre>&lt;ol start="3">
+&lt;li>Delete the docker image&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>docker images
+&lt;/code>&lt;/pre>&lt;blockquote>
+&lt;p>REPOSITORY TAG IMAGE ID CREATED SIZE
+lscr.io/linuxserver/firefox latest ==e2560ed1b6dd== 9 days ago 2.59GB&lt;/p>
+&lt;/blockquote>
+&lt;pre tabindex="0">&lt;code>docker rmi e2560ed1b6dd
+&lt;/code>&lt;/pre></description></item><item><title>General Info- Deleting Docker Container</title><link>https://orenoyume.github.io/senkublog/posts/wsl2-installation/3.3-general-info--deleting-docker-container/</link><pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate><guid>https://orenoyume.github.io/senkublog/posts/wsl2-installation/3.3-general-info--deleting-docker-container/</guid><description>&lt;p>Yes, you can safely delete the hello-world Docker image after pulling and testing it. It’s a very lightweight image, so removing it won’t free up much space, but here’s how you can do it and details about its size:&lt;/p>
+&lt;p>File Size of hello-world Image&lt;/p>
+&lt;pre>&lt;code>•	The official hello-world Docker image is tiny, with a size of around 13.3 kB.
+&lt;/code>&lt;/pre>
+&lt;p>Steps to Delete the hello-world Image&lt;/p>
+&lt;pre>&lt;code>1.	List Docker Images:
+&lt;/code>&lt;/pre>
+&lt;p>To find the hello-world image:&lt;/p></description></item></channel></rss>

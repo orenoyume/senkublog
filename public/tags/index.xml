@@ -7,25 +7,57 @@
 >
   <channel>
     <title>Tags on Zaldy Blog</title>
-    <link>http://localhost:1313/senkublog/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on Zaldy Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Dec 2024 17:20:11 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/senkublog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>//localhost:1313/tags/git/</link>
+      <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
+      <guid>//localhost:1313/tags/git/</guid>
+      <description></description>
+      
+    </item>
     <item>
       <title>Procedure</title>
-      <link>http://localhost:1313/senkublog/tags/procedure/</link>
+      <link>//localhost:1313/tags/procedure/</link>
       <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
-      <guid>http://localhost:1313/senkublog/tags/procedure/</guid>
+      <guid>//localhost:1313/tags/procedure/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Script</title>
+      <link>//localhost:1313/tags/script/</link>
+      <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
+      <guid>//localhost:1313/tags/script/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Sync</title>
+      <link>//localhost:1313/tags/sync/</link>
+      <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
+      <guid>//localhost:1313/tags/sync/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Template</title>
+      <link>//localhost:1313/tags/template/</link>
+      <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
+      <guid>//localhost:1313/tags/template/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Website</title>
-      <link>http://localhost:1313/senkublog/tags/website/</link>
+      <link>//localhost:1313/tags/website/</link>
       <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
-      <guid>http://localhost:1313/senkublog/tags/website/</guid>
+      <guid>//localhost:1313/tags/website/</guid>
       <description></description>
       
     </item>
