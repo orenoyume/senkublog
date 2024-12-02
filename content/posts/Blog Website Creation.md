@@ -121,6 +121,7 @@ echo "Deploying to Master..."
 git checkout master || exit 1
 
 # Copy public folder content to the docs folder
+hugo
 hugo --minify --destination docs || exit 1
 
 # Commit and push changes
@@ -132,6 +133,18 @@ git push -u origin master
 # git checkout master
 echo "Deployment completed!"
 ```
+
+3. Make the script executable
+```bash
+chmod +x deploy.sh
+```
+
+4. Run the script:
+The next time you need to update, just run:
+```bash
+./deploy.sh
+```
+
 ##### OLD VERSION
 ```bash
 #!/bin/bash
@@ -155,17 +168,6 @@ git push origin gh-pages
 # Switch back to master (optional)
 # git checkout master
 echo "Deployment completed!"
-```
-
-3. Make the script executable
-```bash
-chmod +x deploy.sh
-```
-
-4. Run the script:
-The next time you need to update, just run:
-```bash
-./deploy.sh
 ```
 
 ##### Explanation
@@ -486,7 +488,8 @@ hugo --minify --destination docs
 ```bash
 nano .nojekyll
 ```
-
+> Save: ctrl + o, ctrl + x, y, enter
+>  
 # Sync Obsidian with Hugo
 1. Make Dir  on content for your post
 ```bash
