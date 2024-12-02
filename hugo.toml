@@ -1,0 +1,42 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Zaldy Blog'
+theme = 'fluency'
+
+# baseurl = "/"
+# languageCode = "en-us"
+# Add it only if you keep the theme in the `themes` directory.
+# Remove it if you use the theme as a remote Hugo Module.
+# theme = "terminal"
+paginate = 5
+
+
+
+[menus]
+  [[menus.main]]
+    name = 'Categories'
+    pageRef = '/procedure'
+    weight = 10
+#  [[menus.main]]
+#    name = 'Hardware'
+#    pageRef = '/products/hardware'
+#    parent = 'Products'
+#    weight = 1
+  [[menus.main]]
+    name = 'Procedure'
+    pageRef = '/procedure'
+    parent = 'Categories'
+weight = 2
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 20
+  [[menus.main]]
+    name = 'Hugo'
+    pre = '<i class="fa fa-heart"></i>'
+    url = 'https://gohugo.io/'
+    weight = 30
+    [menus.main.params]
+      rel = 'external'
+
+
