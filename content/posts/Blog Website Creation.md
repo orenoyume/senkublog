@@ -26,10 +26,11 @@ My script:
 2. Run hugo
 3. Push the files on Github
 #### Website
-```
-https://kimetsublog.github.io/kimetsublog/public/
-```
+> https://orenoyume.github.io/senkublog/
+
 #### Important
+> ==All your changes on Obsidian notes must be done on obsidian and sync it with hugofolder.==
+> ==When deleting something thing twice about the git link of the folder and file before replacing the same file to avoid messy file management.==
 > ==Important: I do not know why when I added the date, it failed to load the pages of html==
 
 > ==During Testing: Edit the config.toml base url: "/" from /kimetsublog/public/==
@@ -313,6 +314,7 @@ hugo new site kimetsublog
 kimetsu@MSI:~/hugodocument/kimetsublog$ git init
 ```
 
+## Output
 > hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
 hint: of your new repositories, which will suppress this warning, call:
@@ -324,7 +326,7 @@ hint: 'development'. The just-created branch can be renamed via this command:
 hint:
 hint:   git branch -m name
 Initialized empty Git repository in /home/kimetsu/hugodocument/kimetsublog/.git/
-
+## Code
 ```
 kimetsu@MSI:~/hugodocument/kimetsublog$ git config --global user.name "kimetsu"
 kimetsu@MSI:~/hugodocument/kimetsublog$ git config --global user.mail "mr.zaldy.dg@gmail.com"
@@ -335,7 +337,7 @@ kimetsu@MSI:~/hugodocument/kimetsublog$ git config --global user.mail "mr.zaldy.
 ```
 kimetsu@MSI:~/hugodocument/kimetsublog$ git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal
 ```
-
+## Output
 > Cloning into '/home/kimetsu/hugodocument/kimetsublog/themes/terminal'...
 remote: Enumerating objects: 3164, done.
 remote: Counting objects: 100% (1646/1646), done.
@@ -343,7 +345,7 @@ remote: Compressing objects: 100% (338/338), done.
 remote: Total 3164 (delta 1405), reused 1402 (delta 1307), pack-reused 1518 (from 1)
 Receiving objects: 100% (3164/3164), 4.48 MiB | 4.33 MiB/s, done.
 Resolving deltas: 100% (1827/1827), done.
-
+## Code
 3. Edit the config : edit config. or hugo.toml
 ```bash
 # baseURL = 'http://example.org/'
@@ -489,7 +491,7 @@ hugo --minify --destination docs
 nano .nojekyll
 ```
 > Save: ctrl + o, ctrl + x, y, enter
->  
+
 # Sync Obsidian with Hugo
 1. Make Dir  on content for your post
 ```bash
@@ -501,11 +503,13 @@ posts
 ```
 
 2. Source Folder : Obsidian Folder
+this old path
 ```bash
 /home/kimetsu/docker/obsidian/config/ObsidianFiles/ObsidianFiles/posts/
 ```
 
 3. Destination: Hugo Folder
+this is old path
 ```bash
 /home/kimetsu/hugodocument/kimetsublog/content/posts/
 ```
@@ -585,12 +589,13 @@ kimetsu@MSI:~/.ssh$ ssh -T git@github.com
 # Push your kimetsublog to GitHub
 1. Remote repository add: profile username / repositoryname
 ```bash
-git remote add origin git@github.com:kimetsublog/kimetsublog.git
+git remote add origin git@github.com:profile username/repositoryname.git
 ```
 
 2. Built the website
 ```bash
 hugo
+hugo --minify --destination docs
 ```
 
 3. Upload all documents of hugo directory to git repository
@@ -610,6 +615,23 @@ git push -u origin master
 ```
 
 # Publish the Page
+1. Go to Repository Settings
+2.  Under the Branch: master then choose docs
+3. Your website will be available on: 
+> https://orenoyume.github.io/senkublog/
+
+4. Note you will see that the css is not applied, because you need to edit now the 
+==hugo.toml==
+```bash
+baseURL = 'https://orenoyume.github.io/senkublog/'
+```
+
+then deploy the site with
+```bash
+./deploy.sh
+```
+
+# OLD Publish the Page
 1. Optional: Do this if No. 2 Does not work
 > Deploy Only the public/ Folder
 > Navigate to the public/ directory:

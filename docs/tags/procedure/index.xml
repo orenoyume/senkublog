@@ -17,10 +17,11 @@
 &lt;li>Push the files on Github&lt;/li>
 &lt;/ol>
 &lt;h4 id="website">Website&lt;/h4>
-&lt;pre tabindex="0">&lt;code>https://kimetsublog.github.io/kimetsublog/public/
-&lt;/code>&lt;/pre>&lt;h4 id="important">Important&lt;/h4>
 &lt;blockquote>
-&lt;p>==Important: I do not know why when I added the date, it failed to load the pages of html==&lt;/p>
+&lt;p>&lt;a href="https://orenoyume.github.io/senkublog/">https://orenoyume.github.io/senkublog/&lt;/a>&lt;/p>
 &lt;/blockquote>
+&lt;h4 id="important">Important&lt;/h4>
 &lt;blockquote>
-&lt;p>==During Testing: Edit the config.toml base url: &amp;ldquo;/&amp;rdquo; from /kimetsublog/public/==&lt;/p></description></item></channel></rss>
+&lt;p>==All your changes on Obsidian notes must be done on obsidian and sync it with hugofolder.==
+==When deleting something thing twice about the git link of the folder and file before replacing the same file to avoid messy file management.==
+==Important: I do not know why when I added the date, it failed to load the pages of html==&lt;/p></description></item></channel></rss>
