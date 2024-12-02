@@ -2,19 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/posts/wsl2-installation/1.0-ubuntu-installation-with-wsl2/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/wsl2-installation/2.0-updating-version-of-ubuntu-wsl2/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/wsl2-installation/3.0-docker-installation-in-wsl2-ubuntu-without-docker-desktop/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/wsl2-installation/3.1-container-installation/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/wsl2-installation/3.2-deleting-container/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/wsl2-installation/3.3-general-info--deleting-docker-container/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/blog-website-creation/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/pc-iphone--android-set-up/common-pc-syntax/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/pc-iphone--android-set-up/find-your-local-ip-address/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/posts/test---you-can-see-me/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/test---you-dont-see-me/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/blog-website-creation/</loc>
-    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/categories/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/tags/docker/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/git/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/pc/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
@@ -32,6 +62,9 @@
     <loc>//localhost:1313/tags/sync/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/tags/syntax/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
@@ -41,7 +74,13 @@
     <loc>//localhost:1313/categories/test/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/virtual-machine/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/website/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/wsl/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>

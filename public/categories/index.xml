@@ -14,6 +14,14 @@
     <lastBuildDate>Mon, 02 Dec 2024 17:20:11 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Pc</title>
+      <link>//localhost:1313/categories/pc/</link>
+      <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
+      <guid>//localhost:1313/categories/pc/</guid>
+      <description></description>
+      
+    </item>
+    <item>
       <title>Programming</title>
       <link>//localhost:1313/categories/programming/</link>
       <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
@@ -26,6 +34,14 @@
       <link>//localhost:1313/categories/test/</link>
       <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
       <guid>//localhost:1313/categories/test/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Virtual Machine</title>
+      <link>//localhost:1313/categories/virtual-machine/</link>
+      <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
+      <guid>//localhost:1313/categories/virtual-machine/</guid>
       <description></description>
       
     </item>

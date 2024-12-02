@@ -11,7 +11,8 @@ theme = 'fluency'
 # theme = "terminal"
 paginate = 5
 
-
+[params]
+greeting = "Hi there 👋"
 
 [menus]
   [[menus.main]]
@@ -33,9 +34,10 @@ weight = 2
     pageRef = '/tags'
     weight = 20
   [[menus.main]]
-    name = 'Hugo'
+    name = 'Portfolio'
     pre = '<i class="fa fa-heart"></i>'
-    url = 'https://gohugo.io/'
+    url = 'https://silenttraderfx.github.io/index/1-MyPortfolio/'
+    # url = 'https://gohugo.io/'
     weight = 30
     [menus.main.params]
       rel = 'external'

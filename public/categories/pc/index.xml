@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  
+>
+  <channel>
+    <title>Pc on Zaldy Blog</title>
+    <link>//localhost:1313/categories/pc/</link>
+    <description>Recent content in Pc on Zaldy Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Dec 2024 17:20:11 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/pc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Common PC Syntax</title>
+      <link>//localhost:1313/posts/pc-iphone--android-set-up/common-pc-syntax/</link>
+      <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
+      <guid>//localhost:1313/posts/pc-iphone--android-set-up/common-pc-syntax/</guid>
+      <description>&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;&#xA;&lt;h3 id=&#34;shutdown&#34;&gt;Shutdown&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;shutdown -h now&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;reboot&#34;&gt;Reboot&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Shutdown -r 1&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;find-your-local-ip-address&#34;&gt;Find your local IP address&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ifconfig&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Find the IP address, e.g., 192.168.1.100.&#xA;On the other PC, open a browser and go to:&#xA;http://192.168.1.100:3000&lt;/p&gt;&#xA;&lt;h3 id=&#34;check-folder-size&#34;&gt;Check folder size&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;du -ha | sort -k1hr | head -n 10&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;shutdown-1&#34;&gt;Shutdown&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;shutdown /s /t 60&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;find-your-local-ip-address-1&#34;&gt;Find your local IP address&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ipconfig&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Find the IPv4 address, e.g., 192.168.1.100.&lt;/p&gt;&#xA;&lt;h3 id=&#34;edit-boot-loader&#34;&gt;Edit Boot loader&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Windows Button + R key&lt;/li&gt;&#xA;&lt;li&gt;Run&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;msconfig&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mac&#34;&gt;Mac&lt;/h2&gt;&#xA;&lt;h3 id=&#34;shutdown-2&#34;&gt;Shutdown&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;shutdown -h +10&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;android&#34;&gt;Android&lt;/h2&gt;&#xA;&lt;h3 id=&#34;moving-my-file-from-termux-to-phone&#34;&gt;Moving my file from Termux to phone&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mv /data/data/com.termux/files/home/storage/japanese /storage/emulated/0/&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    <item>
+      <title>Find your local IP address</title>
+      <link>//localhost:1313/posts/pc-iphone--android-set-up/find-your-local-ip-address/</link>
+      <pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate>
+      <guid>//localhost:1313/posts/pc-iphone--android-set-up/find-your-local-ip-address/</guid>
+      <description>&lt;p&gt;To share your &lt;code&gt;localhost:3000&lt;/code&gt; with another PC on the same network, follow these steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Find Your Local IP Address&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;On Windows, open Command Prompt and type &lt;code&gt;ipconfig&lt;/code&gt;. Look for the &amp;ldquo;IPv4 Address&amp;rdquo; under your network connection.&lt;/li&gt;&#xA;&lt;li&gt;On macOS or Linux, open Terminal and type &lt;code&gt;ifconfig&lt;/code&gt; or &lt;code&gt;ip a&lt;/code&gt;. Look for the IP address associated with your network interface.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Access the Server from Another PC&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;On the other PC, open a web browser and type your local IP address followed by &lt;code&gt;:3000&lt;/code&gt;. For example, if your IP address is &lt;code&gt;192.168.1.100&lt;/code&gt;, you would enter &lt;code&gt;http://192.168.1.100:3000&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;example-steps-on-windows&#34;&gt;Example Steps on Windows:&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open Command Prompt and type:&lt;/p&gt;</description>
+      
+    </item>
+  </channel>
+</rss>
