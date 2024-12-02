@@ -2,7 +2,8 @@
 date = '2024-12-02T17:20:11+08:00'
 draft = false
 title = 'Blog Website Creation'
-tags = ['Procedure', 'website']
+categories = ['programming']
+tags = ['procedure', 'website', 'git', 'script', 'sync']
 +++
 ### OLD Header
 ```bash
@@ -89,6 +90,7 @@ hugo
 ```
 
 2. Push Generated Files to gh-pages:
+THIS IS OLD refere to deploy.sh for latest syntax, this one uses branch to publish website.
 ```bash
 git checkout gh-pages
 cp -r public/* .
@@ -122,7 +124,7 @@ echo "Deploying to Master..."
 git checkout master || exit 1
 
 # Copy public folder content to the docs folder
-hugo
+# hugo (hugo is not needed since it uses --minify)
 hugo --minify --destination docs || exit 1
 
 # Commit and push changes
@@ -251,13 +253,24 @@ go version go1.23.3 linux/amd64
 ```
 
 4. Install Hugo
+## OLD Process
 ```
 sudo apt install hugo -y
 hugo version
 ```
 > hugo v0.92.2+extended linux/amd64 BuildDate=2023-01-31T11:11:57Z VendorInfo=ubuntu:0.92.2-1ubuntu0.1
+## NEW Process
+4.1 Download the tar file of hugo, extract and place in:
+```bash
+/usr/local/bin
+```
 
-ERROR: put in the end of ~/.bashrc
+extract command:
+```bash
+tar -xzf hugo_version_Linux-64bit.tar.gz
+```
+
+**ERROR: put in the end of ~/.bashrc**
 ```bash
 which hugo
 ```
@@ -293,7 +306,7 @@ kimetsu@MSI:~/hugodocument$
 
 6.  Create the Base of Hugo website population
 ```
-hugo new site kimetsublog
+hugo new site senkublog
 ```
 
 > Congratulations! Your new Hugo site is created in /home/kimetsu/hugodocument/kimetsublog.
@@ -492,6 +505,49 @@ nano .nojekyll
 ```
 > Save: ctrl + o, ctrl + x, y, enter
 
+## hugo.toml (fluency themes)
+```bash
+baseURL = 'https://orenoyume.github.io/senkublog/'
+languageCode = 'en-us'
+title = 'Zaldy Blog'
+theme = 'fluency'
+
+# baseurl = "/"
+# languageCode = "en-us"
+# Add it only if you keep the theme in the `themes` directory.
+# Remove it if you use the theme as a remote Hugo Module.
+# theme = "terminal"
+paginate = 5
+
+
+
+[menus]
+  [[menus.main]]
+    name = 'Categories'
+    pageRef = '/procedure'
+    weight = 10
+#  [[menus.main]]
+#    name = 'Hardware'
+#    pageRef = '/products/hardware'
+#    parent = 'Products'
+#    weight = 1
+  [[menus.main]]
+    name = 'Procedure'
+    pageRef = '/procedure'
+    parent = 'Categories'
+weight = 2
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 20
+  [[menus.main]]
+    name = 'Hugo'
+    pre = '<i class="fa fa-heart"></i>'
+    url = 'https://gohugo.io/'
+    weight = 30
+    [menus.main.params]
+      rel = 'external'
+```
 # Sync Obsidian with Hugo
 1. Make Dir  on content for your post
 ```bash
@@ -519,11 +575,17 @@ this is old path
 rsync -av --delete "/home/kimetsu/docker/obsidian/config/ObsidianFiles/ObsidianFiles/posts/" "/home/kimetsu/hugodocument/kimetsublog/content/posts/"
 ```
 
-Test it
+Test it with hugo public folder
 ```bash
 hugo server -t terminal
 ```
+> terminal : uses the theme terminal name
 
+Test it with hugo --minify docs folder
+```bash
+python3 -m http.server
+```
+Exit: Ctrl + C
 # GitHub Account Creation
 
 ```bash
@@ -594,7 +656,7 @@ git remote add origin git@github.com:profile username/repositoryname.git
 
 2. Built the website
 ```bash
-hugo
+# hugo
 hugo --minify --destination docs
 ```
 

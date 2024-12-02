@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://orenoyume.github.io/senkublog/posts/blog-website-creation/</loc>
+    <loc>http://localhost:1313/senkublog/posts/blog-website-creation/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>https://orenoyume.github.io/senkublog/posts/</loc>
+    <loc>http://localhost:1313/senkublog/posts/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>https://orenoyume.github.io/senkublog/tags/procedure/</loc>
+    <loc>http://localhost:1313/senkublog/tags/procedure/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>https://orenoyume.github.io/senkublog/tags/</loc>
+    <loc>http://localhost:1313/senkublog/tags/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>https://orenoyume.github.io/senkublog/tags/website/</loc>
+    <loc>http://localhost:1313/senkublog/tags/website/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>https://orenoyume.github.io/senkublog/</loc>
+    <loc>http://localhost:1313/senkublog/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>https://orenoyume.github.io/senkublog/categories/</loc>
+    <loc>http://localhost:1313/senkublog/categories/</loc>
   </url>
 </urlset>

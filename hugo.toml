@@ -39,4 +39,6 @@ weight = 2
     [menus.main.params]
       rel = 'external'
 
-
+[build]
+	[build.render]
+		list = ["hidden"]

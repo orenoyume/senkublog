@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:wfw="http://wellformedweb.org/CommentAPI/"><channel><title>Git on Zaldy Blog</title><link>https://orenoyume.github.io/senkublog/tags/git/</link><description>Recent content in Git on Zaldy Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 02 Dec 2024 17:20:11 +0800</lastBuildDate><atom:link href="https://orenoyume.github.io/senkublog/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog Website Creation</title><link>https://orenoyume.github.io/senkublog/posts/blog-website-creation/</link><pubDate>Mon, 02 Dec 2024 17:20:11 +0800</pubDate><guid>https://orenoyume.github.io/senkublog/posts/blog-website-creation/</guid><description>&lt;h3 id="old-header">OLD Header&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>title: 1.0-
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>draft: false
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>tags:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - blog
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - website
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - procedure
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="uploading-changes-to-github">Uploading changes to GitHub&lt;/h3>
+&lt;p>My script:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>./deploy.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="explanation-of-the-script">Explanation of the script&lt;/h4>
+&lt;ol>
+&lt;li>Sync the files from obsidian to hugo contents folder&lt;/li>
+&lt;li>Run hugo&lt;/li>
+&lt;li>Push the files on Github&lt;/li>
+&lt;/ol>
+&lt;h4 id="website">Website&lt;/h4>
+&lt;blockquote>
+&lt;p>&lt;a href="https://orenoyume.github.io/senkublog/">https://orenoyume.github.io/senkublog/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="important">Important&lt;/h4>
+&lt;blockquote>
+&lt;p>==All your changes on Obsidian notes must be done on obsidian and sync it with hugofolder.==
+==When deleting something thing twice about the git link of the folder and file before replacing the same file to avoid messy file management.==
+==Important: I do not know why when I added the date, it failed to load the pages of html==&lt;/p></description></item></channel></rss>

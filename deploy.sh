@@ -8,7 +8,7 @@ echo "Deploying to Master..."
 git checkout master || exit 1
 
 # Copy public folder content to the docs folder
-hugo
+# hugo
 hugo --minify --destination docs || exit 1
 
 # Commit and push changes
