@@ -6,13 +6,13 @@
   
 >
   <channel>
-    <title>Zaldy Blog</title>
-    <link>/</link>
-    <description>Recent content on Zaldy Blog</description>
+    <title>Website on Zaldy Blog</title>
+    <link>/tags/website/</link>
+    <description>Recent content in Website on Zaldy Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Dec 2024 17:20:11 +0800</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog Website Creation</title>
       <link>/posts/blog-website-creation/</link>

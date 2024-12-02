@@ -2,17 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/posts/blog-website-creation/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
     <loc>/posts/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
-    <loc>/procedure/</loc>
+    <loc>/tags/procedure/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-12-02T17:20:11+08:00</lastmod>
+  </url><url>
+    <loc>/tags/website/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
     <loc>/</loc>
     <lastmod>2024-12-02T17:20:11+08:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-  </url><url>
-    <loc>/tags/</loc>
   </url>
 </urlset>
